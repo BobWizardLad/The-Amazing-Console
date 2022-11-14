@@ -44,3 +44,10 @@ def Race():
     ivy.goto(-160, 40)
     ivy.pendown()
 
+    ivy = Turtle()
+    ivy.shape('turtle')
+    ivy.color('green')
+
+    ivy.penup()
+    ivy.goto(-160, 40)
+    ivy.pendown()
