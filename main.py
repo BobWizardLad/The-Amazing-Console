@@ -1,5 +1,5 @@
 # Import your files here!
-# import Fish-Phish.py
+import Phishy Activity.py
 import art
 import time
 
@@ -48,6 +48,7 @@ while(end != 1):
             pass
         elif user_in == "6":
             # your main function here!!!
+            phishy()
             pass
         elif user_in == "7":
             # your main function here!!!
