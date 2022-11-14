@@ -1,5 +1,6 @@
 from turtle import *
-from random import randit
+from random import randint
+
 
 def Race():
 
@@ -44,10 +45,16 @@ def Race():
     ivy.goto(-160, 40)
     ivy.pendown()
 
-    ivy = Turtle()
-    ivy.shape('turtle')
-    ivy.color('green')
+    jim = Turtle()
+    jim.shape('turtle')
+    jim.color('orange')
 
-    ivy.penup()
-    ivy.goto(-160, 40)
-    ivy.pendown()
+    jim.penup()
+    jim.goto(-160, 10)
+    jim.pendown()
+
+    for turn in range(100):
+        ada.forward(randint(1, 5))
+        bob.forward(randint(1, 5))
+        ivy.forward(randint(1, 5))
+        jim.forward(randint(1, 5))
