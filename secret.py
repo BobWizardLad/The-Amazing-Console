@@ -23,20 +23,3 @@ def pegasus():
         else:
             print("Hmm, something is wrong. Please check your answer..." +
                 "\n*******************************************************************")
-=======
-    if decrypted_message == original_message:
-<<<<<<< Updated upstream
-        print("Correct!"+
-              "\n*******************************************************************")
-    else:
-        print("Hmm, something is wrong. Please check your answer..." +
-              "\n*******************************************************************")
-=======
-        print("Correct!\n")
-    else:
-        print("Hmm, something is wrong. Please check your answer...\n")
->>>>>>> Stashed changes
->>>>>>> origin/pegasus
-
-
-
