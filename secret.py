@@ -33,7 +33,7 @@ def pegasus():
             # Encrypt lowercase characters in plain text
             else:
                 result += chr((ord(char) + s - 97) % 26 + 97)
-            return result
+        return result
 
     new_level("This is a top-secret message") # level One
     new_level("Rendez-vous at 1224 E Street") # level Two
