@@ -58,6 +58,7 @@ def phishy():
 
         if userInput == 'y' or userInput == 'Y':
             print("Good try, but this email is safe")
+            print("---------------------------------------------------------")
             email3(score)
 
         elif userInput == 'n' or userInput == 'N':
