@@ -1,5 +1,5 @@
 # Import your files here!
-# import mycode.py
+# import Fish-Phish.py
 import art
 import time
 
@@ -63,3 +63,4 @@ while(end != 1):
                 end = 1
                 print("Goodbye!")
                 pass
+
