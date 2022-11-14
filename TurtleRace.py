@@ -27,3 +27,12 @@ def Race():
     ada.penup()
     ada.goto(-160, 100)
     ada.pendown()
+
+    bob = Turtle()
+    bob.color('blue')
+    bob.shape('turtle')
+
+    bob.penup()
+    bob.goto(-160, 70)
+    bob.pendown()
+
