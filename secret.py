@@ -31,8 +31,11 @@ def pegasus():
             if (char.isupper() == True):
                 result += chr((ord(char) + s - 65) % 26 + 65)
             # Encrypt lowercase characters in plain text
+            elif char == " ": # if space add one
+                result += " "
             else:
                 result += chr((ord(char) + s - 97) % 26 + 97)
+
         return result
 
     new_level("This is a top-secret message") # level One
