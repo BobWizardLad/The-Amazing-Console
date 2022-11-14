@@ -67,6 +67,14 @@ else:
     print("Incorrect!")
 
 
+# Question Two, Country Two
+print()
+print("What continent is " + user_country_two + " in?")
+user_guess_two_new = input("Answer: ")
+
+
+
+
 
 
 
