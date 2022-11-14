@@ -54,6 +54,18 @@ countryTwo = CountryInfo(user_country_two)
 answerNew = countryTwo.capital()
 answerTwoNew = countryTwo.region()
 
+# Question One, Country Two
+print("What is the capital of " + user_country_two + "?")
+print()
+user_question_two = input("Answer: ")
+
+# Determining if answer is correct or false
+if answerNew == user_question_two:
+  print("Great job, you got it right! 😃")
+  score += 1
+else:
+    print("Incorrect!")
+
 
 
 
