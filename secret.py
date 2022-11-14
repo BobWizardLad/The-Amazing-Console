@@ -1,5 +1,8 @@
 
 def pegasus():
+
+    level1 = True
+
     print("\n*******************************************************************"+
           "\nWe are team PEGASUS, commissioned by Aniket, Austin, and Chandra." +
           "\nYour goal is to decrypt this message, and find what the secret is.")
@@ -11,12 +14,14 @@ def pegasus():
 
     decrypted_message = input("\n\nDecrypt this message. [Caesar Cipher]\n-> ")
 
-    if decrypted_message == original_message:
-        print("Correct!"+
-              "\n*******************************************************************")
-    else:
-        print("Hmm, something is wrong. Please check your answer..." +
-              "\n*******************************************************************")
+    while lvl1:
+        if decrypted_message == original_message:
+            print("Correct!"+
+                "\n*******************************************************************")
+            lvl1 = False
+        else:
+            print("Hmm, something is wrong. Please check your answer..." +
+                "\n*******************************************************************")
 
 
 
