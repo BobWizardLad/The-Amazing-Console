@@ -9,7 +9,7 @@ def pegasus():
 
     print("\n\nThis is the encrypted message: " + encrypted_message)
 
-    decrypted_message = input("\n\nDecrypt this message. [Caesar Cipher] -> ")
+    decrypted_message = input("\n\nDecrypt this message. [Caesar Cipher]\n-> ")
 
     if decrypted_message == original_message:
         print("Correct!"+
