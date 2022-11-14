@@ -10,15 +10,31 @@ def phishy():
 
     score = 0
 
-    #Email 1 - phising
 
+    def email1(score):
+        print("Phising Email here")
+        print("")
+
+        userInput = input("Is this phising? Y or N :  ")
+
+        if userInput == 'y' or 'Y':
+            score += 1
+            print("Good catch! Your new score is: " + score)
+
+        elif userInput == 'n' or 'N':
+            print("Good try, but this email is phising")
+
+        else:
+            print("That wasn't an option, try tht again")
+            email1()
 
     #Email 2 - safe
 
 
     #Email 3 - phising
 
-
+    #Funtion call
+    email1(score)
 
     pass
 
