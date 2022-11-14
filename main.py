@@ -1,5 +1,5 @@
 # Import your files here!
-# import mycode.py
+import TurtleRace
 import art
 import time
 
@@ -35,7 +35,7 @@ while(end != 1):
                 # your main function here!!!
                 pass
             elif user_in == "2":
-                # your main function here!!!
+                TurtleRace.Race()
                 pass
             elif user_in == "3":
                 # your main function here!!!
