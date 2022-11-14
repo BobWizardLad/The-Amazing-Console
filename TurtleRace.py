@@ -36,3 +36,11 @@ def Race():
     bob.goto(-160, 70)
     bob.pendown()
 
+    ivy = Turtle()
+    ivy.shape('turtle')
+    ivy.color('green')
+
+    ivy.penup()
+    ivy.goto(-160, 40)
+    ivy.pendown()
+
