@@ -2,6 +2,8 @@
 # import mycode.py
 import art
 import time
+#import secret.py as secret
+import secret
 
 # Menu text for selection
 def getMenu():
@@ -44,11 +46,7 @@ while(end != 1):
                 # your main function here!!!
                 pass
             elif user_in == "5":
-
-                print("We are team PEGASUS, commissioned by Aniket, Austin, and ardnahC. \nYour goal is to decrpt this message, and find what the secret is.")
-                print("\n\n***Your Message: jihkd uibd7 kjnedk jk3")
-
-
+                secret.pegasus()
                 pass
             elif user_in == "6":
                 # your main function here!!!
