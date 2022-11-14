@@ -16,7 +16,7 @@ def pegasus():
                   "\n*******************************************************************")
 
         else:
-            print("Hmm, something is wrong. Please check your answer..." +
+            print("Hmm, something is wrong. Try again." +
                   "\n*******************************************************************")
             new_level(original_message, encrypted_message)
 
