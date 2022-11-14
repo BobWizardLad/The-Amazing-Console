@@ -2,7 +2,6 @@
 # import mycode.py
 import art
 import time
-#import secret.py as secret
 import secret
 
 # Menu text for selection
