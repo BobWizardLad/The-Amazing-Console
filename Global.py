@@ -38,7 +38,9 @@ if user_guess_two == answerTwo:
 else:
     print("Incorrect!")
 
-
+# Country Two
+print(" Pick Another Country")
+user_country_two = input("My country is: ")
 
 
 
