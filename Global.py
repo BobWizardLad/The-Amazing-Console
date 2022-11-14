@@ -3,6 +3,8 @@ import art
 import flagpy as fp
 from countryinfo import CountryInfo
 
+score = 0
+
 # Tprint for print text
 art.tprint("Welcome  to  Global!")
 
@@ -25,6 +27,7 @@ user_guess = input("Answer: ")
 # Determining if answer is correct or false
 if answer == user_guess:
   print("Great job, you got it right! 😃")
+  score += 1
 else:
     print("Incorrect!")
 
@@ -35,12 +38,22 @@ user_guess_two = input("Answer: ")
 
 if user_guess_two == answerTwo:
     print("Correct! 😃")
+    score += 1
 else:
     print("Incorrect!")
+
 
 # Country Two
 print(" Pick Another Country")
 user_country_two = input("My country is: ")
+
+# Setting up and defining correct answers
+art.tprint(user_country_two)
+imgTwo = fp.display(user_country_two)
+countryTwo = CountryInfo(user_country_two)
+answerNew = countryTwo.capital()
+answerTwoNew = countryTwo.region()
+
 
 
 
