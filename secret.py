@@ -18,6 +18,8 @@ def pegasus():
         else:
             print("Hmm, something is wrong. Please check your answer..." +
                   "\n*******************************************************************")
+            new_level(original_message, encrypted_message)
+
     
-    while True:
-        new_level("This is a top-secret message", "Uijt jt b upq-tfdsfu nfttbhf")
+    new_level("This is a top-secret message", "Uijt jt b upq-tfdsfu nfttbhf") # level One
+    #new_level(",", ",") # level Two
