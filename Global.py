@@ -5,6 +5,7 @@ from countryinfo import CountryInfo
 
 score = 0
 
+
 # Tprint for print text
 art.tprint("Welcome  to  Global!")
 
@@ -71,6 +72,21 @@ else:
 print()
 print("What continent is " + user_country_two + " in?")
 user_guess_two_new = input("Answer: ")
+
+if user_guess_two == answerTwo:
+    print("Correct! 😃")
+    score += 1
+else:
+    print("Incorrect!")
+
+finalScore = score / 4
+
+print()
+print("Your Results: \n Score:")
+print(score)
+print("Average Score:")
+print(finalScore)
+
 
 
 
