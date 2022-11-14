@@ -16,7 +16,7 @@ def slotmachine():
     while (n < 3):
 
         x = random.randint(1,len(wordlist))
-        slotlist += [x]
+        slotlist += [wordlist[x]]
         n += 1
     nonrepeatslotlist = (slotlist)
     if len(nonrepeatslotlist) == 1:
