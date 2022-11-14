@@ -58,3 +58,4 @@ def Race():
         bob.forward(randint(1, 5))
         ivy.forward(randint(1, 5))
         jim.forward(randint(1, 5))
+Race()
