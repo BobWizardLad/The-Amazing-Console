@@ -40,3 +40,6 @@ def pegasus():
 
     new_level("This is a top-secret message") # level One
     new_level("Rendez-vous at 1224 E Street") # level Two
+    new_level("s e c r e t s   e x i s t")  # level Three
+    new_level("rhombicosidodecahedron")    # level Four
+    new_level("pneumonoultramicroscopicsilicovolcanoconiosis") # level Five
