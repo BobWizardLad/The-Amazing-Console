@@ -111,4 +111,3 @@ def phishy():
     #Funtion call
     email1(score)
 
-phishy()
