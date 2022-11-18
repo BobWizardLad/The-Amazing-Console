@@ -1,13 +1,9 @@
-from tkinter import *
+import turtle
+tr = turtle.Turtle()
+wn = turtle.Screen()
+wn.setup(width=860,height=750)
+wn.bgpic("monkay.gif")
 
-ws = Tk()
-ws.title('PythonGuides')
-ws.geometry('500x300')
-ws.config(bg='yellow')
+wn.mainloop()
 
-img = PhotoImage(file="python-tkinter-background-image.png")
-label = Label(
-    ws,
-    image=img
-)
-label.place(x=0, y=0)
+
