@@ -1,144 +1,56 @@
-# boop
 
 
-import random as random
+def pegasus():
 
+    level_system = True
+    print("\n*******************************************************************" +
+          "\nWe are team PEGASUS, commissioned by Aniket, Austin, and Chandra." +
+          "\nYour goal is to decrypt this message, and find what the secret is.")
 
+    def new_level( original_message ):
 
+        encrypted_message = to_encrypt(original_message, 5) # encrypting original
 
+        print("\n\nThis is the encrypted message: " + encrypted_message)
 
-# Secret = 5
+        decrypted_message = input("\n\nDecrypt this message. [Caesar Cipher]\n-> ")
 
+        if decrypted_message == original_message:
+            print("Correct! Level passed" +
+                  "\n*******************************************************************")
 
-def secret():
-    word = get_word()
-
-    letters_guessed = []
-
-    tries = 6
-
-    guessed = False
-
-    print()
-
-    while (guessed == False) and tries > 0:
-        print('You have ' + str(tries) + ' tries')
-        print('')
-        guess = input('Guess a letter or enter the full word: ').lower()
-
-        # User inputs
-        if len(guess) == 1:
-            if guess in letters_guessed:
-                print('You have already guessed that letter, try again.')
-            elif guess not in word:
-                print('That letter is not in the word')
-                letters_guessed.append(guess)
-                tries -= 1
-                hangman_model(tries)
-            elif guess in word:
-                print('That letter is in the word')
-                letters_guessed.append(guess)
-            else:
-                print('You entered an incorrect input')
-        elif len(guess) == len(word):
-            if guess == word:
-                print('Good job, you guessed the correct word')
-                guessed = True
-            else:
-                print('That is the wrong word')
-                guessed = False
-                tries -= 1
-                hangman_model(tries)
         else:
-            print('Your guess was not the correct length')
+            print("Hmm, something is wrong. Try again." +
+                  "\n*******************************************************************")
+            new_level(original_message)
 
-            tries -= 1
-            hangman_model(tries)
-        if guessed == False:
-            win = ''
-            for letter in word:
-                if letter in letters_guessed:
-                    win += letter
-                else:
-                    win += ''
-                print(win)
-            if win == word:
-                print('You chose the right letter!')
-                guessed = True
-            elif tries == 0:
-                print('You have lost the game, try again.')
+    def to_encrypt(original_message, s):
+        result = ""
+        # transverse the plain text
+        for i in range(len(original_message)):
+            char = original_message[i]
+            # Encrypt uppercase characters in plain text
 
+            if (char.isupper() == True):
+                result += chr((ord(char) + s - 65) % 26 + 65)
+            # Encrypt lowercase characters in plain text
+            elif char == " ": # if space add one
+                result += " "
+            elif char == "-": # if hyphen leave it
+                result += "-"
+            else: # for all other characters
+                result += chr((ord(char) + s - 97) % 26 + 97)
 
-def get_word():
-    "this function gets words for the user to guess"
-    #words = ['Cake', 'Anaconda', 'Potato', 'Tomato', 'Mother', 'Father', 'Pickle']
-    words = ['Cake']
-    return random.choice(words).lower()
+        return result
 
+    new_level("This is a top-secret message") # level One
+    new_level("Rendez-vous at 1224 E Street") # level Two
+    new_level("s e c r e t s    e x i s t")  # level Three
+    new_level("rhombicosidodecahedron")    # level Four
+    new_level("pneumonoultramicroscopicsilicovolcanoconiosis") # level Five
 
-
-def hangman_model(tries):
-    if tries == 6:
-        print("|‾‾‾‾‾|    ")
-        print("|     |    ")
-        print("|          ")
-        print("|          ")
-        print("|          ")
-    elif tries == 5:
-        print("|‾‾‾‾‾|    ")
-        print("|     |    ")
-        print("|     0    ")
-        print("|          ")
-        print("|          ")
-    elif tries == 4:
-        print("|‾‾‾‾‾|    ")
-        print("|     |    ")
-        print("|     0    ")
-        print("|    /     ")
-        print("|          ")
-    elif tries == 3:
-        print("|‾‾‾‾‾|    ")
-        print("|     |    ")
-        print("|     0    ")
-        print("|    / \   ")
-        print("|          ")
-    elif tries == 2:
-        print("|‾‾‾‾‾|    ")
-        print("|     |    ")
-        print("|     0    ")
-        print("|    /|\   ")
-        print("|          ")
-    elif tries == 1:
-        print("|‾‾‾‾‾|    ")
-        print("|     |    ")
-        print("|     0    ")
-        print("|    /|\   ")
-        print("|    /     ")
-    elif tries == 0:
-        print("|‾‾‾‾‾|       ")
-        print("|     |       ")
-        print("|     0       ")
-        print("|    /|\      ")
-        print("|    / \      ")
-        print("              ")
-        print("|‾‾‾‾‾|       ")
-        print("|     |       ")
-        print("|        0    ")
-        print("|       /|\   ")
-        print("|       / \   ")
-        print("              ")
-        print("|        0/‾  ")
-        print("|       /|    ")
-        print("|       / \   ")
-        print("              ")
-        print("|      ‾\0    ")
-        print("|        |\   ")
-        print("|       / \   ")
-        print("Great job! You found the secret!")
-
-
-while True:
-    secret()
-
-secret()
-
+    print(
+          "\n*******************************************************************" +
+          "\n****************************** DONE *******************************" +
+          "\n*******************************************************************" +
+    )
