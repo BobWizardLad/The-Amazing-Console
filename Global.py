@@ -88,6 +88,10 @@ def global_rohan():
     print(score)
     print("Average Score:")
     print(finalScore)
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 
 

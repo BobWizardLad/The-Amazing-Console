@@ -3,6 +3,10 @@
 import art
 import time
 import Global
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 # Menu text for selection
 def getMenu():
     print("1. Cyber")
