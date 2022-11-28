@@ -2,6 +2,7 @@
 import phishy_activity
 import art
 import time
+import lucky
 
 # Menu text for selection
 def getMenu():
