@@ -7,7 +7,6 @@ def global_rohan():
 
     score = 0
 
-
     # Tprint for print text
     art.tprint("Welcome  to  Global!")
 
@@ -88,11 +87,6 @@ def global_rohan():
     print(score)
     print("Average Score:")
     print(finalScore)
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
-
 
 
 
