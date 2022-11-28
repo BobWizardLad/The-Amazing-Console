@@ -2,8 +2,10 @@
 
 
 def teamLuck():
+    import art
+
     balance = 1000
-    print("Welcome to the CASINO")
+    art.tprint("Welcome to the CASINO")
     print("Lets go get some MONEY$$$. SHEEESH")
     print("Your starting balance is", balance)
     print("Your goal is to get to 2,000")
@@ -14,7 +16,7 @@ def teamLuck():
 
     while (decision == "y"):
         import random
-        wordList = ["Banana", "Apples", "Grapes", "7up", "Sheesh", "LIL JOSH", "Dr. Chandra", "Yung Alton", "LudaChris", "Snickers"]
+        wordList = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "M", "N", "O","L", "L", "L", "L", "L"]
         n = 0
         slotList = []
         while (n < 3):
@@ -23,19 +25,24 @@ def teamLuck():
             n += 1
         nonRepeatSlotList = set(slotList)
 
-        if len(nonRepeatSlotList) == 1:
+        if len(nonRepeatSlotList) == 1 and nonRepeatSlotList != ("L"):
             print("YOU WIN")
             balance += 1000
+        elif nonRepeatSlotList == ("L"):
+
         else:
             print("Did you know that 99% of gamblers quit before their first big win?")
             balance -= 250
-        print(slotList)
+        for a in slotList:
+            art.tprint(a, font = 'block', chr_ignore = True)
+
         print("Would you like to keep going?")
         print(balance)
         decision = input()
     if (decision == "n"):
         print("You are not smart. You could've won big.")
         print(balance)
+
 
 teamLuck()
 
