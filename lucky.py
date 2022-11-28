@@ -29,6 +29,9 @@ def teamLuck():
             print("YOU WIN")
             balance += 1000
         elif nonRepeatSlotList == ("L"):
+            print("MASSSSSIVE L BRUH")
+
+            balance -= 100000000000000000000000000000000000000000000000000000
 
         else:
             print("Did you know that 99% of gamblers quit before their first big win?")
@@ -42,6 +45,7 @@ def teamLuck():
     if (decision == "n"):
         print("You are not smart. You could've won big.")
         print(balance)
+
 
 
 teamLuck()
