@@ -1,3 +1,6 @@
 # This is a file that holds all the packages this program needs.
 
 art==5.7
+flagpy==1.0.3
+countryinfo==0.1.2
+pyamaze==1.0.1

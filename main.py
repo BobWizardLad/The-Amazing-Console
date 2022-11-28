@@ -4,6 +4,9 @@ import time
 import lucky
 import phishy_activity
 import TurtleRace
+import Global
+import monkay_maze
+import secret
 
 # Menu text for selection
 def getMenu():
@@ -34,34 +37,22 @@ while(end != 1):
 
     if(user_in.isnumeric):
         if user_in == "1":
-            # your main function here!!!
-            pass
+            print("404: Not Found")
         elif user_in == "2":
             TurtleRace.Race()
-            pass
         elif user_in == "3":
-            # your main function here!!!
-            pass
+            monkay_maze.findx_main()
         elif user_in == "4":
-            # your main function here!!!
-            pass
+            lucky.teamLuck()
         elif user_in == "5":
-            # your main function here!!!
-            pass
+            secret.pegasus()
         elif user_in == "6":
             phishy_activity.phishy()
-            pass
         elif user_in == "7":
-            # your main function here!!!
-            pass
+            Global.global_main()
         elif user_in == "8":
-            # your main function here!!!
-            pass
-        elif user_in == "9":
-            # your main function here!!!
-            pass
+            print("404: Not Found")
         elif user_in == "0":
             end = 1
             print("Goodbye!")
-            pass
 
