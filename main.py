@@ -1,5 +1,5 @@
 # Import your files here!
-# import mycode.py
+import phishy_activity
 import art
 import time
 
@@ -31,34 +31,35 @@ while(end != 1):
     user_in = input("I Choose: ")
 
     if(user_in.isnumeric):
-            if user_in == "1":
+        match user_in:
+            case "1":
                 # your main function here!!!
                 pass
-            elif user_in == "2":
+            case "2":
                 # your main function here!!!
                 pass
-            elif user_in == "3":
+            case "3":
                 # your main function here!!!
                 pass
-            elif user_in == "4":
+            case "4":
                 # your main function here!!!
                 pass
-            elif user_in == "5":
+            case "5":
                 # your main function here!!!
                 pass
-            elif user_in == "6":
+            case "6":
+                phishy_activity.phishy()
+                pass
+            case "7":
                 # your main function here!!!
                 pass
-            elif user_in == "7":
+            case "8":
                 # your main function here!!!
                 pass
-            elif user_in == "8":
+            case "9":
                 # your main function here!!!
                 pass
-            elif user_in == "9":
-                # your main function here!!!
-                pass
-            else:
+            case "0":
                 end = 1
                 print("Goodbye!")
                 pass
