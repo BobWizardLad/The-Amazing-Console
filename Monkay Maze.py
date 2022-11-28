@@ -1,9 +1,15 @@
+#create turtle
 import turtle
-tr = turtle.Turtle()
+myTurtle = turtle.Turtle()
 wn = turtle.Screen()
 wn.setup(width=860,height=750)
-wn.bgpic("monkay.gif")
 
+#create maze
+from pyamaze import maze
+m=maze()
+m.CreateMaze()
+m.run()
+
+
+turtle.done()
 wn.mainloop()
-
-
