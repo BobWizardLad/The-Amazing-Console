@@ -2,7 +2,7 @@
 # import mycode.py
 import art
 import time
-
+import Global
 # Menu text for selection
 def getMenu():
     print("1. Cyber")
@@ -50,7 +50,7 @@ while(end != 1):
                 # your main function here!!!
                 pass
             elif user_in == "7":
-                # your main function here!!!
+                Global.global_rohan()
                 pass
             elif user_in == "8":
                 # your main function here!!!
