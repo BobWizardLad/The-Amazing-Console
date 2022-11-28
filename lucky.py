@@ -16,7 +16,7 @@ def teamLuck():
 
     while (decision == "y"):
         import random
-        wordList = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "M", "N", "O","L", "L", "L", "L", "L"]
+        wordList = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "M", "N", "O","L", "L", "L", "L", "L"]
         n = 0
         slotList = []
         while (n < 3):

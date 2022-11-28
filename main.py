@@ -2,6 +2,7 @@
 # import mycode.py
 import art
 import time
+import lucky.py
 
 # Menu text for selection
 def getMenu():
@@ -42,6 +43,8 @@ while(end != 1):
                 pass
             elif user_in == "4":
                 # your main function here!!!
+                lucky.teamLuck()
+
                 pass
             elif user_in == "5":
                 # your main function here!!!
