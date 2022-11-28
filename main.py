@@ -7,6 +7,7 @@
 # import mycode.py
 import art
 import time
+import secret
 
 # Menu text for selection
 def getMenu():
@@ -49,7 +50,7 @@ while(end != 1):
                 # your main function here!!!
                 pass
             elif user_in == "5":
-                # your main function here!!!
+                secret.pegasus()
                 pass
             elif user_in == "6":
                 # your main function here!!!
