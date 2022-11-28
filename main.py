@@ -1,8 +1,9 @@
 # Import your files here!
-import phishy_activity
 import art
 import time
 import lucky
+import phishy_activity
+import TurtleRace
 
 # Menu text for selection
 def getMenu():
@@ -36,7 +37,7 @@ while(end != 1):
             # your main function here!!!
             pass
         elif user_in == "2":
-            # your main function here!!!
+            TurtleRace.Race()
             pass
         elif user_in == "3":
             # your main function here!!!
@@ -63,3 +64,4 @@ while(end != 1):
             end = 1
             print("Goodbye!")
             pass
+
