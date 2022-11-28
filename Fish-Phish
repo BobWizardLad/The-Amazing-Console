@@ -1,9 +1,0 @@
-import time
-import art
-def phishy():
-    Print("You Have chosen the fishing tab... oh. I mean Phising tab")
-    Print("Good luck")
-    Print("")
-    Print("The task includes deciding weather an email that is given to you phising or not.")
-
-phishy()

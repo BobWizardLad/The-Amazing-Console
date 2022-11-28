@@ -1,9 +1,13 @@
 # Import your files here!
+
 import art
 import time
 import lucky
 import phishy_activity
 import TurtleRace
+import Global
+
+
 
 # Menu text for selection
 def getMenu():
@@ -52,7 +56,7 @@ while(end != 1):
             phishy_activity.phishy()
             pass
         elif user_in == "7":
-            # your main function here!!!
+            Global.global_rohan()
             pass
         elif user_in == "8":
             # your main function here!!!
@@ -64,4 +68,5 @@ while(end != 1):
             end = 1
             print("Goodbye!")
             pass
+
 
