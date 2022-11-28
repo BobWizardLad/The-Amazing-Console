@@ -2,6 +2,7 @@
 import phishy_activity
 import art
 import time
+import lucky
 
 # Menu text for selection
 def getMenu():
@@ -43,6 +44,7 @@ while(end != 1):
                 pass
             case "4":
                 # your main function here!!!
+                lucky.teamLuck()
                 pass
             case "5":
                 # your main function here!!!
