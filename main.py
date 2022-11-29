@@ -1,7 +1,12 @@
 # Import your files here!
-# import mycode.py
 import art
 import time
+import lucky
+import phishy_activity
+import TurtleRace
+import Global
+import monkay_maze
+import secret
 
 # Menu text for selection
 def getMenu():
@@ -31,35 +36,23 @@ while(end != 1):
     user_in = input("I Choose: ")
 
     if(user_in.isnumeric):
-        match user_in:
-            case "1":
-                # your main function here!!!
-                pass
-            case "2":
-                # your main function here!!!
-                pass
-            case "3":
-                # your main function here!!!
-                pass
-            case "4":
-                # your main function here!!!
-                pass
-            case "5":
-                # your main function here!!!
-                pass
-            case "6":
-                # your main function here!!!
-                pass
-            case "7":
-                # your main function here!!!
-                pass
-            case "8":
-                # your main function here!!!
-                pass
-            case "9":
-                # your main function here!!!
-                pass
-            case "0":
-                end = 1
-                print("Goodbye!")
-                pass
+        if user_in == "1":
+            print("404: Not Found")
+        elif user_in == "2":
+            TurtleRace.Race()
+        elif user_in == "3":
+            monkay_maze.findx_main()
+        elif user_in == "4":
+            lucky.teamLuck()
+        elif user_in == "5":
+            secret.pegasus()
+        elif user_in == "6":
+            phishy_activity.phishy()
+        elif user_in == "7":
+            Global.global_main()
+        elif user_in == "8":
+            print("404: Not Found")
+        elif user_in == "0":
+            end = 1
+            print("Goodbye!")
+
